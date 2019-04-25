@@ -37,7 +37,7 @@ _Check linked files to more details._
 
 Install Arch Linux using this guide:
 
-[Arch Linux Installation Guide](https://gist.github.com/samuelramox/4e53fd910e6f8cc54c2cfaad1da333b8)
+[Arch Linux Installation Guide](https://gist.github.com/samuelramox/f1d397089a2ad4b1dbce8bab22dbc8da)
 
 #### Gnome Shell
 
