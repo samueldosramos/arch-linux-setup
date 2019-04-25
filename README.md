@@ -136,4 +136,3 @@ Code → Preference → Settings (or CTRL + ,) and add or edit the following val
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Powerlevel9k theme for Zsh](https://github.com/bhilburn/powerlevel9k)
 - [Nerd Fonts](https://nerdfonts.com/)
-- [Mackup](https://github.com/lra/mackup)
