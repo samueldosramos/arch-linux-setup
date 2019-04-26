@@ -22,7 +22,7 @@ replacefiles() {
 }
 
 # Ask before potentially overwriting files
-seek_confirmation "Warning: This step may overwrite your existing dotfiles."
+seek_confirmation "Warning: This step may overwrite your existing dotfiles and git configs."
 if is_confirmed; then
     replacefiles
     source ${HOME}/.bash_profile
@@ -42,8 +42,6 @@ bash ./install/yay.sh
 # Install drivers
 seek_confirmation "Warning: This step install Linux drivers."
 if is_confirmed; then
-    e_header "Please, configure you drivers before installation."
-    nano ${DOTFILES_DIRECTORY}/install/drivers.sh
     bash ./install/drivers.sh
 else
     e_warning "Skipped drivers settings update."
@@ -52,18 +50,16 @@ fi
 # Install applications
 seek_confirmation "Warning: This step install applications."
 if is_confirmed; then
-    e_header "Please, configure you applications before installation."
+    e_header "Please, configure you applications before installation:"
     nano ${DOTFILES_DIRECTORY}/install/apps.sh
     bash ./install/apps.sh
 else
     e_warning "Skipped applications install."
 fi
 
-# Install Zsh and ask before potentially overwriting overwriting files
+# Install Zsh
 seek_confirmation "Warning: This step install Zsh, Hack Nerd Font and some plugins."
 if is_confirmed; then
-    e_header "Please, if necessary, configure before installation."
-    nano ${DOTFILES_DIRECTORY}/install/zsh.sh
     bash ./install/zsh.sh
     replace ".zshrc"    ".zshrc"
     e_warning "Please, after finishing the installation, remember to change the font of your terminal app to your favorite Nerd Font."
@@ -71,7 +67,7 @@ else
     e_warning "Skipped Zsh settings update."
 fi
 
-# Ask before potentially overwriting VSCode
+# VSCode Settings
 seek_confirmation "Warning: This step may modify your VSCode configs."
 if is_confirmed; then
     if which code &> /dev/null; then
@@ -83,8 +79,6 @@ if is_confirmed; then
     killall code-oss
 
     replace "vscode/settings.json"     "/.config/Code - OSS/User"
-    e_header "Please, configure you plugins before installation."
-    nano ${DOTFILES_DIRECTORY}/install/vscode.sh
     bash ./install/vscode.sh
 else
     e_warning "Skipped VSCode settings update."
@@ -93,8 +87,6 @@ fi
 # Install npm packages
 seek_confirmation "Warning: This step install npm packages"
 if is_confirmed; then
-    e_header "Please, configure your npm packages before installation."
-    nano ${DOTFILES_DIRECTORY}/install/npm.sh
     bash ./install/npm.sh
 else
     e_warning "Skipped npm settings update."
@@ -111,4 +103,5 @@ rm -rf ${HOME}/dotfiles.zip
 cd ~
 rm -rf ${DOTFILES_DIRECTORY}
 
+# Finish
 e_success "Reboot and enjoy!"

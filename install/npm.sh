@@ -21,5 +21,5 @@ sudo npm install -g sass
 sudo npm install -g typescript
 sudo npm install -g tslint
 
-#Finish
+# Finish
 e_success "Finished npm packages settings."

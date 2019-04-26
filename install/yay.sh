@@ -17,5 +17,5 @@ if which yay &> /dev/null; then
   makepkg -si
 fi
 
-#Finish
+# Finish
 e_success "Finished Yay settings."

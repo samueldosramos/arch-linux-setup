@@ -23,4 +23,5 @@ yay -Sy zsh-theme-powerlevel9k
 # Set Zsh as your default shell:
 chsh -s /bin/zsh
 
+# Finish
 e_success "Finished Zsh settings."

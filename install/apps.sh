@@ -81,5 +81,5 @@ rm -Rv /tmp/
 yay -Scc
 yay -Qtd
 
-#Finish
+# Finish
 e_success "Finished applications installation."

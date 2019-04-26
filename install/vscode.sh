@@ -25,4 +25,5 @@ for module in $modules; do
   code --install-extension "$module" || true
 done
 
+# Finish
 e_success "Finished VSCode settings."
