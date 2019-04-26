@@ -5,18 +5,21 @@
 
 source ./install/utils.sh
 
+# Keep-alive: update existing `sudo` time stamp until `.apps.sh` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 if which nodejs &> /dev/null; then
   yay -Sy nodejs npm
 fi
 
 # Packages
-npm install -g create-react-app
-npm install -g create-react-native-app
-npm install -g eslint
-npm install -g gulp-cli
-npm install -g sass
-npm install -g typescript
-npm install -g tslint
+sudo npm install -g create-react-app
+sudo npm install -g create-react-native-app
+sudo npm install -g eslint
+sudo npm install -g gulp-cli
+sudo npm install -g sass
+sudo npm install -g typescript
+sudo npm install -g tslint
 
 #Finish
-e_success "Finished the npm packages installation"
+e_success "Finished npm packages settings."

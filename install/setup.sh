@@ -35,26 +35,28 @@ e_header "Configure your Git settings: "
 nano ${HOME}/.gitconfig
 e_success "Git settings updated!"
 
+# Install Yay
+e_header "Installing Yay..."
+bash ./install/yay.sh
+
 # Install drivers
 seek_confirmation "Warning: This step install Linux drivers."
 if is_confirmed; then
     e_header "Please, configure you drivers before installation."
     nano ${DOTFILES_DIRECTORY}/install/drivers.sh
     bash ./install/drivers.sh
-    e_success "Drivers are installed!"
 else
     e_warning "Skipped drivers settings update."
 fi
 
-# Install Yay and apps
-seek_confirmation "Warning: This step install Yay and applications."
+# Install applications
+seek_confirmation "Warning: This step install applications."
 if is_confirmed; then
     e_header "Please, configure you applications before installation."
     nano ${DOTFILES_DIRECTORY}/install/apps.sh
     bash ./install/apps.sh
-    e_success "Yay and applications are installed!"
 else
-    e_warning "Skipped Yay settings update."
+    e_warning "Skipped applications install."
 fi
 
 # Install Zsh and ask before potentially overwriting overwriting files
@@ -64,7 +66,6 @@ if is_confirmed; then
     nano ${DOTFILES_DIRECTORY}/install/zsh.sh
     bash ./install/zsh.sh
     replace ".zshrc"    ".zshrc"
-    e_success "Zsh and plugins are installed!"
     e_warning "Please, after finishing the installation, remember to change the font of your terminal app to your favorite Nerd Font."
 else
     e_warning "Skipped Zsh settings update."
@@ -79,14 +80,12 @@ if is_confirmed; then
 
     code
     sleep 2
-    kill -9 $(pgrep Electron)
+    killall code-oss
 
-    replace "/vscode/settings.json"     "/home/samuel/.config/Code\ -\ OSS/User/settings.json"
-    replace "/vscode/keybindings.json"  "/home/samuel/.config/Code\ -\ OSS/User/keybindings.json"
+    replace "vscode/settings.json"     "/.config/Code - OSS/User"
     e_header "Please, configure you plugins before installation."
     nano ${DOTFILES_DIRECTORY}/install/vscode.sh
     bash ./install/vscode.sh
-    e_success "VSCode settings updated!"
 else
     e_warning "Skipped VSCode settings update."
 fi
@@ -97,7 +96,6 @@ if is_confirmed; then
     e_header "Please, configure your npm packages before installation."
     nano ${DOTFILES_DIRECTORY}/install/npm.sh
     bash ./install/npm.sh
-    e_success "npm packages are installed!"
 else
     e_warning "Skipped npm settings update."
 fi
@@ -110,6 +108,7 @@ mkdir ${HOME}/Developer
 e_header "Removing unnecessary files"
 rm -rf ${HOME}/dotfiles.tar.gz
 rm -rf ${HOME}/dotfiles.zip
+cd ~
 rm -rf ${DOTFILES_DIRECTORY}
 
 e_success "Reboot and enjoy!"

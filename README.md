@@ -15,12 +15,13 @@ _Check linked files to more details._
 
 ### Installation files:
 
+- [apps.sh](install/apps.sh) - installs applications.
 - [drivers.sh](install/drivers.sh) - install linux drivers.
-- [apps.sh](install/apps.sh) - installs Yay and apps.
 - [npm.sh](install/npm.sh) - install npm packages.
 - [setup.sh](install/setup.sh) - main installer.
 - [util.sh](install/util.sh) - support functions for other installers.
 - [vscode.sh](install/vscode.sh) - VSCode plugins installer.
+- [yay.sh](install/yay.sh) - install Yay.
 - [zsh.sh](install/zsh.sh) - Zsh installer.
 
 ### Others files:

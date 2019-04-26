@@ -1,60 +1,16 @@
 #!/bin/bash
 #
-# Install Yay and applications
+# Install applications
 # Check out https://github.com/Jguer/yay for more details
 # Comment (with #) what should not be installed and add the applications you want to install.
 
 source ./install/utils.sh
 
-# Ask for the administrator password upfront
-sudo -v
-
 # Keep-alive: update existing `sudo` time stamp until `.apps.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Install required packages before installation
-pacman -Sy git go
-
-# Install Yay
-e_header "Installing Yay for you."
-if which yay &> /dev/null; then
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
-  makepkg -si
-fi
-
-# Install applications
-e_header "Installing applications..."
-
 # Gnome apps
-yay -Sy eog
-yay -Sy evince
-yay -Sy file-roller
-yay -Sy gedit
-yay -Sy gedit-plugins
-yay -Sy gnome-backgrounds
-yay -Sy gnome-books
-yay -Sy gnome-calculator
-yay -Sy gnome-calendar
-yay -Sy gnome-control-center
-yay -Sy gnome-dictionary
-yay -Sy gnome-disk-utility
-yay -Sy gnome-music
-yay -Sy gnome-photos
-yay -Sy gnome-screenshot
-yay -Sy gnome-shell-extensions
-yay -Sy gnome-system-monitor
-yay -Sy gnome-video-effects
-yay -Sy gvfs
-yay -Sy sushi
-yay -Sy totem
-yay -Sy gnome-tweaks
-yay -Sy gnome-usage
-yay -Sy gtranslator
-yay -Sy gnome-podcasts
-yay -Sy feedreader
-yay -Sy adwaita-qt5
-yay -Sy seahorse
+yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-books gnome-calculator gnome-calendar gnome-control-center gnome-dictionary gnome-disk-utility gnome-music gnome-photos gnome-screenshot gnome-shell-extensions gnome-system-monitor gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage gtranslator gnome-podcasts feedreader adwaita-qt5 seahorse
 
 # Themes
 yay -Sy adapta-gtk-theme
@@ -67,12 +23,7 @@ yay -Sy gnome-shell-extension-topicons-plus
 yay -Sy gnome-shell-extension-timepp-git
 
 # Fonts
-pacman -Sy ttf-dejavu
-pacman -Sy ttf-freefont
-pacman -Sy ttf-liberation
-pacman -Sy ttf-ms-fonts
-pacman -Sy ttf-ubuntu-font-family
-pacman -Sy ttf-fira-code
+yay -Sy ttf-dejavu ttf-freefont ttf-liberation ttf-ms-fonts ttf-ubuntu-font-family ttf-fira-code
 
 # Browser
 yay -Sy install google-chrome
@@ -122,10 +73,6 @@ yay -Sy gufw
 sudo ufw enable
 sudo systemctl enable ufw
 
-# Finished this step
-sleep 1
-e_success "Success! Yay and applications are installed."
-
 # Cleans up cached downloads
 e_header "Clearing the cache..."
 pacman -Scc
@@ -135,4 +82,4 @@ yay -Scc
 yay -Qtd
 
 #Finish
-e_success "Finished the applications installation"
+e_success "Finished applications installation."
