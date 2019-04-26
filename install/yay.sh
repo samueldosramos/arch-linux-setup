@@ -9,11 +9,10 @@ keep_sudo_alive
 sudo pacman -Sy git go
 
 # Install Yay
-if which yay &> /dev/null; then
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
-  makepkg -si
-fi
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
 
 # Finish
 e_success "Finished Yay settings."
