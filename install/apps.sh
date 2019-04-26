@@ -5,9 +5,7 @@
 # Comment (with #) what should not be installed and add the applications you want to install.
 
 source ./install/utils.sh
-
-# Keep-alive: update existing `sudo` time stamp until `.apps.sh` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+keep_sudo_alive
 
 # Gnome apps
 yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-books gnome-calculator gnome-calendar gnome-control-center gnome-dictionary gnome-disk-utility gnome-music gnome-photos gnome-screenshot gnome-shell-extensions gnome-system-monitor gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage gtranslator gnome-podcasts feedreader adwaita-qt5 seahorse

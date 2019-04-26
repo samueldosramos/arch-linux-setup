@@ -41,3 +41,8 @@ is_confirmed() {
     fi
     return 1
 }
+
+# Keep-alive: update existing `sudo` time stamp until `.apps.sh` has finished
+keep_sudo_alive() {
+    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+}
