@@ -35,6 +35,10 @@ e_header "Configure your Git settings: "
 nano ${HOME}/.gitconfig
 e_success "Git settings updated!"
 
+# Install light Gnome
+e_header "Installing Gnome..."
+bash ./install/gnome.sh
+
 # Install Yay
 e_header "Installing Yay..."
 bash ./install/yay.sh

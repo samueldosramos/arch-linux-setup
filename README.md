@@ -17,6 +17,7 @@ _Check linked files to more details._
 
 - [apps.sh](install/apps.sh) - installs applications.
 - [drivers.sh](install/drivers.sh) - install linux drivers.
+- [gnome.sh](install/gnome.sh) - install light gnome.
 - [npm.sh](install/npm.sh) - install npm packages.
 - [setup.sh](install/setup.sh) - main installer.
 - [util.sh](install/util.sh) - support functions for other installers.
@@ -39,22 +40,6 @@ _Check linked files to more details._
 Install Arch Linux using this guide:
 
 [Arch Linux Installation Guide](https://gist.github.com/samuelramox/f1d397089a2ad4b1dbce8bab22dbc8da)
-
-#### Gnome Shell
-
-After install Arch Linux, install basic Gnome:
-
-```
-sudo pacman -S gnome-shell gnome-terminal gdm nautilus xdg-user-dirs-gtk
-```
-
-Enable and start gdm
-
-```
-systemctl enable gdm
-
-sudo systemctl start gdm
-```
 
 #### This scripts
 
