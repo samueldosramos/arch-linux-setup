@@ -65,3 +65,16 @@ app_is_installed() {
     e_success "$1 is installed"
   fi
 }
+
+# Force move/replace files.
+replace() {
+    mv -f "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
+}
+
+# Move/replace setting files to /Home
+replacefiles() {
+    replace ".bash_profile"     ".bash_profile"
+    replace ".gitconfig"        ".gitconfig"
+    replace ".gitignore_global" ".gitignore_global"
+    e_success "Dotfiles update complete!"
+}

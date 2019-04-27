@@ -6,20 +6,6 @@ DOTFILES_DIRECTORY="$PWD"
 
 source ./install/utils.sh
 
-replace() {
-    # Force move/replace files.
-    mv -f "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
-}
-
-replacefiles() {
-    # Move/replace setting files to /Home
-    replace ".bash_profile"     ".bash_profile"
-    replace ".gitconfig"        ".gitconfig"
-    replace ".gitignore_global" ".gitignore_global"
-
-    e_success "Dotfiles update complete!"
-}
-
 # Ask before potentially overwriting files
 seek_confirmation "Warning: This step may overwrite your existing dotfiles and git configs."
 if is_confirmed; then
