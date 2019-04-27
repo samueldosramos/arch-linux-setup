@@ -94,7 +94,6 @@ sudo yay -Qtd
 e_header "Removing unnecessary files"
 rm -rf ${HOME}/dotfiles.tar.gz
 rm -rf ${HOME}/dotfiles.zip
-cd ${HOME}
 rm -rf ${DOTFILES_DIRECTORY}
 
 # Finish
