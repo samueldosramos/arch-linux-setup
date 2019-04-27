@@ -3,7 +3,6 @@
 # Main install script
 
 DOTFILES_DIRECTORY="$PWD"
-DOTFILES_PATH="${HOME}"
 
 source ./install/utils.sh
 
@@ -77,7 +76,6 @@ if is_confirmed; then
     if which code &> /dev/null; then
     yay -Sy code
     fi
-
     code
     sleep 2
     killall code-oss
@@ -104,7 +102,7 @@ mkdir ${HOME}/Developer
 e_header "Removing unnecessary files"
 rm -rf ${HOME}/dotfiles.tar.gz
 rm -rf ${HOME}/dotfiles.zip
-cd ~
+cd ${HOME}
 rm -rf ${DOTFILES_DIRECTORY}
 
 # Finish
