@@ -73,9 +73,7 @@ fi
 # VSCode Settings
 seek_confirmation "Warning: This step may modify your VSCode configs."
 if is_confirmed; then
-    if which code &> /dev/null; then
-    yay -Sy code
-    fi
+    app_is_installed code
     code
     sleep 2
     killall code-oss

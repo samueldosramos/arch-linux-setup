@@ -44,5 +44,24 @@ is_confirmed() {
 
 # Keep-alive: update existing `sudo` time stamp until `.apps.sh` has finished
 keep_sudo_alive() {
-    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; don  e 2>/dev/null &
+}
+
+# Check if a application is installed
+app_is_installed() {
+  e_header "Verifying that $1 is installed..."
+
+  # set to 1 initially
+  local return_=1
+
+  # set to 0 if not found
+  type $1 >/dev/null 2>&1 || { local return_=0; }
+
+  # return value
+  if [ $return_ = 0 ]; then
+    e_warning "Installing $1..."
+    yay -Sy $1
+  else
+    e_success "$1 is installed"
+  fi
 }
