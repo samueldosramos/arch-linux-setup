@@ -71,13 +71,5 @@ yay -Sy gufw
 sudo ufw enable
 sudo systemctl enable ufw
 
-# Cleans up cached downloads
-e_header "Clearing the cache..."
-pacman -Scc
-pacman -Qdtq | sudo pacman -Rs -
-rm -Rv /tmp/
-yay -Scc
-yay -Qtd
-
 # Finish
 e_success "Finished applications installation."

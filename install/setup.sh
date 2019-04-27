@@ -82,6 +82,14 @@ fi
 e_header "Creating Projects directory in Home"
 mkdir ${HOME}/Developer
 
+# Cleans up cached downloads
+e_header "Clearing the cache..."
+sudo pacman -Scc
+sudo pacman -Qdtq | sudo pacman -Rs -
+sudo rm -Rv /tmp/
+sudo yay -Scc
+sudo yay -Qtd
+
 # Remove the installation zip and folder
 e_header "Removing unnecessary files"
 rm -rf ${HOME}/dotfiles.tar.gz
