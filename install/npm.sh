@@ -6,8 +6,13 @@
 source ./install/utils.sh
 keep_sudo_alive
 
-if which nodejs &> /dev/null; then
-  yay -Sy nodejs npm
+var="nodejs"
+e_header "Verifying that $var is installed..."
+if which node &> /dev/null; then
+  e_success "$var is installed"
+  else
+  e_warning "Installing $var..."
+  yay -Sy $var npm
 fi
 
 # Packages
