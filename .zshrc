@@ -88,7 +88,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

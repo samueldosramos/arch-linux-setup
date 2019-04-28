@@ -16,8 +16,8 @@ killall code-oss
 # Move/replace vscode/settings.json to VSCode folder
 replace "vscode/settings.json"     "/.config/Code - OSS/User"
 
-# from `code --list-extensions`
-modules="
+# List extensions to install (from `code --list-extensions`)
+extensions="
     formulahendry.auto-rename-tag
     coenraads.bracket-pair-colorizer-2
     editorConfig.editorconfig
@@ -32,8 +32,9 @@ modules="
     ms-vscode.vscode-typescript-tslint-plugin
 "
 
-for module in $modules; do
-  code --install-extension "$module" || true
+# Install extensions
+for extension in $extensions; do
+  code --install-extension "$extension" || true
 done
 
 # Finish

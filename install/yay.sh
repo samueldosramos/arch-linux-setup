@@ -13,6 +13,5 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-
 # Finish
 e_success "Finished Yay settings."
