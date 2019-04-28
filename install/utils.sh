@@ -42,7 +42,7 @@ is_confirmed() {
   return 1
 }
 
-# Keep-alive: update existing `sudo` time stamp until `.apps.sh` has finished
+# Keep-alive: update existing `sudo` time stamp until process has finished
 keep_sudo_alive() {
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
@@ -66,7 +66,7 @@ app_is_installed() {
   fi
 }
 
-# Force move/replace files.
+# Force move/replace files
 DOTFILES_DIRECTORY="$PWD"
 
 replace() {

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Install linux drivers
+# Install drivers
 
 source ./install/utils.sh
 keep_sudo_alive

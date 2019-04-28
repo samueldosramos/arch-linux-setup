@@ -46,7 +46,7 @@ else
     e_warning "Skipped Zsh settings update."
 fi
 
-# VSCode Settings
+# VSCode settings
 seek_confirmation "Warning: This step may modify your VSCode configs."
 if is_confirmed; then
     bash ./install/vscode.sh
@@ -66,7 +66,7 @@ fi
 e_header "Creating Projects directory in Home"
 mkdir ${HOME}/Developer
 
-# Cleans up cached downloads
+# Clean up cached downloads
 e_header "Clearing the cache..."
 sudo pacman -Scc
 sudo pacman -Qdtq | sudo pacman -Rs -

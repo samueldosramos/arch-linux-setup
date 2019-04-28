@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Install applications
-# Check out https://github.com/Jguer/yay for more details
 # Comment (with #) what should not be installed and add the applications you want to install.
 
 source ./install/utils.sh

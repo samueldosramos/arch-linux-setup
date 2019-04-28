@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Install Zsh and set as default shell
+# Install dotfiles and configure git
 
 source ./install/utils.sh
 
