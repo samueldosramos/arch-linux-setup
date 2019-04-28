@@ -67,6 +67,8 @@ app_is_installed() {
 }
 
 # Force move/replace files.
+DOTFILES_DIRECTORY="$PWD"
+
 replace() {
     mv -f "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
 }

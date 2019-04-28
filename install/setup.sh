@@ -2,8 +2,6 @@
 #
 # Main install script
 
-DOTFILES_DIRECTORY="$PWD"
-
 source ./install/utils.sh
 
 # Dotfiles configs
@@ -50,7 +48,7 @@ fi
 
 # VSCode Settings
 seek_confirmation "Warning: This step may modify your VSCode configs."
-if is_confirmed; the
+if is_confirmed; then
     bash ./install/vscode.sh
 else
     e_warning "Skipped VSCode settings update."
