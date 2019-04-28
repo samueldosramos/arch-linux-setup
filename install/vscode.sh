@@ -5,6 +5,17 @@
 
 source ./install/utils.sh
 
+# Check if VSCode is installed
+app_is_installed code
+
+# Open and close VSCode to generate VSCode folder
+code
+sleep 2
+killall code-oss
+
+# Move/replace vscode/settings.json to VSCode folder
+replace "vscode/settings.json"     "/.config/Code - OSS/User"
+
 # from `code --list-extensions`
 modules="
     formulahendry.auto-rename-tag

@@ -56,13 +56,7 @@ fi
 
 # VSCode Settings
 seek_confirmation "Warning: This step may modify your VSCode configs."
-if is_confirmed; then
-    app_is_installed code
-    code
-    sleep 2
-    killall code-oss
-
-    replace "vscode/settings.json"     "/.config/Code - OSS/User"
+if is_confirmed; the
     bash ./install/vscode.sh
 else
     e_warning "Skipped VSCode settings update."
