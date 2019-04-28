@@ -16,6 +16,7 @@ _Check linked files to more details._
 ### Installation files:
 
 - [apps.sh](install/apps.sh) - installs applications.
+- [dotfiles.sh](install/dotfiles.sh) - install and configure dotfiles.
 - [drivers.sh](install/drivers.sh) - install linux drivers.
 - [gnome.sh](install/gnome.sh) - install light gnome.
 - [npm.sh](install/npm.sh) - install npm packages.

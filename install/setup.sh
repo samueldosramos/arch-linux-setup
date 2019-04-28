@@ -6,19 +6,13 @@ DOTFILES_DIRECTORY="$PWD"
 
 source ./install/utils.sh
 
-# Ask before potentially overwriting files
+# Dotfiles configs
 seek_confirmation "Warning: This step may overwrite your existing dotfiles and git configs."
 if is_confirmed; then
-    replacefiles
-    source ${HOME}/.bash_profile
+    bash ./install/dotfiles.sh
 else
     e_warning "Skipped dotfiles settings."
 fi
-
-# Git configs
-e_header "Configure your Git settings: "
-nano ${HOME}/.gitconfig
-e_success "Git settings updated!"
 
 # Install light Gnome
 e_header "Installing Gnome..."
