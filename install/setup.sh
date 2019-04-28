@@ -50,8 +50,6 @@ fi
 seek_confirmation "Warning: This step install Zsh, Hack Nerd Font and some plugins."
 if is_confirmed; then
     bash ./install/zsh.sh
-    replace ".zshrc"    ".zshrc"
-    e_warning "Please, after finishing the installation, remember to change the font of your terminal app to your favorite Nerd Font."
 else
     e_warning "Skipped Zsh settings update."
 fi

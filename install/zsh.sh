@@ -23,5 +23,11 @@ yay -Sy zsh-theme-powerlevel9k
 # Set Zsh as your default shell:
 chsh -s /bin/zsh
 
+# Move/replace .zshrc to /Home
+replace ".zshrc"    ".zshrc"
+
+# Warning message
+e_warning "Please, after finishing the installation, remember to change the font of your terminal app to your favorite Nerd Font."
+
 # Finish
 e_success "Finished Zsh settings."
