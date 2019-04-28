@@ -2,6 +2,8 @@
 
 This is a simple dotfiles and scripts to install and customizing Arch Linux with Gnome.
 
+**Note:** _This script was tested on a Lenovo Ideapad 330_
+
 ## Features
 
 _Check linked files to more details._
