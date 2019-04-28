@@ -44,7 +44,7 @@ Install Arch Linux using this guide:
 
 [Arch Linux Installation Guide](https://gist.github.com/samuelramox/f1d397089a2ad4b1dbce8bab22dbc8da)
 
-#### This scripts
+### This scripts
 
 Download and install this script:
 
