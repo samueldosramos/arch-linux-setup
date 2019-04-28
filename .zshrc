@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/samuel/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # ========== Custom paths ==========
 # Support 256 colors path
