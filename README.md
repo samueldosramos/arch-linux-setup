@@ -8,25 +8,28 @@ This is a simple dotfiles and scripts to install and customizing Arch Linux with
 
 _Check linked files to more details._
 
-### Settings Files:
+### Installation guide:
 
-- [bash_profile](.bash_profile) - some fallback configs to Terminal.app.
-- [gitconfig](.gitconfig) - basic git settings.
-- [gitignore_global](.gitignore_global) - global gitignore.
-- [zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
+- [arch-installation-guide](arch-installation-guide.md) - Installation guide including Arch Linux and Gnome.
 
 ### Installation files:
 
 - [apps.sh](install/apps.sh) - installs applications.
 - [dotfiles.sh](install/dotfiles.sh) - install and configure dotfiles.
 - [drivers.sh](install/drivers.sh) - install linux drivers.
-- [gnome.sh](install/gnome.sh) - install light gnome.
 - [npm.sh](install/npm.sh) - install npm packages.
 - [setup.sh](install/setup.sh) - main installer.
 - [util.sh](install/util.sh) - support functions for other installers.
 - [vscode.sh](install/vscode.sh) - VSCode plugins installer.
 - [yay.sh](install/yay.sh) - install Yay.
 - [zsh.sh](install/zsh.sh) - Zsh installer.
+
+### Settings Files:
+
+- [bash_profile](.bash_profile) - some fallback configs to Terminal.app.
+- [gitconfig](.gitconfig) - basic git settings.
+- [gitignore_global](.gitignore_global) - global gitignore.
+- [zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
 
 ### Others files:
 
@@ -36,17 +39,9 @@ _Check linked files to more details._
 
 ## Installation:
 
-### Setup before installation
+First, install Arch Linux and the Gnome base. Follow the [Arch Linux Installation Guide](arch-installation-guide.md) to install them.
 
-#### Arch Linux
-
-Install Arch Linux using this guide:
-
-[Arch Linux Installation Guide](https://gist.github.com/samuelramox/f1d397089a2ad4b1dbce8bab22dbc8da)
-
-### This scripts
-
-Download and install this script:
+If you already have Arch Linux and Gnome installed, run these commands:
 
 ```
 git clone https://github.com/samuelramox/gnome-setup.git && cd gnome-setup

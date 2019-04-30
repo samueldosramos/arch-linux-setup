@@ -12,10 +12,6 @@ else
     e_warning "Skipped dotfiles settings."
 fi
 
-# Install light Gnome
-e_header "Installing Gnome..."
-bash ./install/gnome.sh
-
 # Install Yay
 e_header "Installing Yay..."
 bash ./install/yay.sh
