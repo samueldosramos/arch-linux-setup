@@ -5,8 +5,9 @@
 source ./install/utils.sh
 keep_sudo_alive
 
-# Install required packages before installation
-sudo pacman -Sy git go
+# Check and nstall required packages before installation
+app_is_installed git
+app_is_installed go
 
 # Install Yay
 git clone https://aur.archlinux.org/yay.git
