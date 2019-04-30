@@ -7,13 +7,12 @@ source ./install/utils.sh
 keep_sudo_alive
 
 # Gnome apps
-yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-books gnome-calculator gnome-calendar gnome-control-center gnome-dictionary gnome-disk-utility gnome-music gnome-photos gnome-screenshot gnome-shell-extensions gnome-system-monitor gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage gtranslator gnome-podcasts feedreader adwaita-qt5 seahorse
+yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-calculator gnome-calendar gnome-control-center gnome-disk-utility gnome-music gnome-photos gnome-screenshot gnome-shell-extensions gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage seahorse
 
 # Themes
 yay -Sy adapta-gtk-theme
-yay -Sy materia-gtk-theme
-yay -Sy suru-icon-theme-git
 yay -Sy suru-plus-pack-git
+yay -Sy yaru-icon-theme yaru-gtk-theme yaru-gnome-shell-theme
 
 # Extensions
 yay -Sy gnome-shell-extension-topicons-plus
@@ -27,7 +26,7 @@ yay -Sy install google-chrome
 #yay -Sy firefox firefox-i18n-pt-br
 
 # Cloud
-yay -Sy install dropbox
+yay -Sy install dropbox nautilus-dropbox
 
 # Developer
 yay -Sy nodejs npm
@@ -41,7 +40,6 @@ sudo systemctl start sshd
 
 # Multimedia
 yay -Sy qbittorrent
-yay -Sy vlc
 yay -Sy spotify
 
 # Productivity
