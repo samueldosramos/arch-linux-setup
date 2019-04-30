@@ -19,8 +19,5 @@ sudo modprobe btusb
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
-# Touchpad drivers
-yay -Sy libinput
-
 # Finish
 e_success "Finished drivers settings."
