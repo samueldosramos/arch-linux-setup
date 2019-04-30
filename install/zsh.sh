@@ -17,8 +17,8 @@ yay -Sy zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 # See more: https://nerdfonts.com/
 yay -Sy nerd-fonts-complete
 
-# Install Powerlevel9k theme
-yay -Sy zsh-theme-powerlevel9k
+# Install Powerlevel10k theme
+yay -Sy zsh-theme-powerlevel10k
 
 # Set Zsh as your default shell:
 chsh -s /bin/zsh

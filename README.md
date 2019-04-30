@@ -123,5 +123,5 @@ Code → Preference → Settings (or CTRL + ,) and add or edit the following val
 - [Suru Icons](https://snwh.org/suru)
 - [Suru Plus Icons](https://github.com/gusbemacbe/suru-plus)
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Powerlevel9k theme for Zsh](https://github.com/bhilburn/powerlevel9k)
+- [Powerlevel10k theme for Zsh](https://github.com/romkatv/powerlevel10k)
 - [Nerd Fonts](https://nerdfonts.com/)
