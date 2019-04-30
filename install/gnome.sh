@@ -9,6 +9,7 @@ keep_sudo_alive
 sudo pacman -S gnome-shell gnome-terminal gdm nautilus xdg-user-dirs-gtk
 
 sudo systemctl enable gdm
+sudo systemctl start gdm
 
 # Finish
 e_success "Finished Gnome installation."
