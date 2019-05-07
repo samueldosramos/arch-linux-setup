@@ -7,22 +7,21 @@ source ./install/utils.sh
 keep_sudo_alive
 
 # Gnome apps
-yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-calculator gnome-calendar gnome-control-center gnome-disk-utility gnome-music gnome-photos gnome-screenshot gnome-shell-extensions gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage seahorse
+yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-calculator gnome-calendar gnome-control-center gnome-disk-utility gnome-photos gnome-screenshot gnome-shell-extensions gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage seahorse
 
 # Themes
 yay -Sy adapta-gtk-theme
+yay -Sy paper-icon-theme-git
+yay -Sy breeze-adapta-cursor-theme-git
+yay -Sy xcursor-breeze
 yay -Sy suru-plus-pack-git
 yay -Sy yaru-icon-theme yaru-gtk-theme yaru-gnome-shell-theme
-
-# Extensions
-yay -Sy gnome-shell-extension-topicons-plus
-yay -Sy gnome-shell-extension-timepp-git
 
 # Fonts
 yay -Sy ttf-dejavu ttf-freefont ttf-liberation ttf-ms-fonts ttf-ubuntu-font-family ttf-fira-code
 
 # Browser
-yay -Sy install google-chrome
+yay -Sy install google-chrome chrome-gnome-shell
 #yay -Sy firefox firefox-i18n-pt-br
 
 # Cloud
@@ -41,13 +40,10 @@ sudo systemctl start sshd
 # Multimedia
 yay -Sy qbittorrent
 yay -Sy spotify
+yay -Sy lollyṕop
 
 # Productivity
-yay -Sy geary
-#yay -Sy mailspring
-yay -Sy notion-app
-yay -Sy ao
-yay -Sy p3x-onenote
+yay -Sy mailspring
 yay -Sy wps-office ttf-wps-fonts wps-office-mui-pt-br wps-office-extension-portuguese-brazilian-dictionary
 
 # Social

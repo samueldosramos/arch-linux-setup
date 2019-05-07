@@ -10,11 +10,11 @@ yay -Sy acpi
 yay -Sy laptop-mode-tools
 sudo systemctl enable laptop-mode.service
 
-# Audio drivers
-yay -Sy alsa-utils alsa-firmware alsa-plugins pulseaudio pulseaudio-alsa ffmpeg pulseaudio-bluetooth paprefs celt faac faad2 flac jasper lame libdca libdv libmpeg2 opus speex wavpack x264 x265 gst-libav
+# Multimedia codecs
+yay -Sy --noconfirm pulseaudio pulseaudio-alsa a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore x265 ffmpeg
 
 # Bluetooth drivers
-yay -Sy bluez bluez-utils
+yay -Sy gnome-bluetooth pulseaudio-bluetooth
 sudo modprobe btusb
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
