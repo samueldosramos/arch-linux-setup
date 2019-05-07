@@ -103,9 +103,9 @@ Terminal → Preferences → Profiles → Text → Change Font. I use Hack Nerd 
 #### Visual Studio Code config:
 
 **Note:** _Step needed only if you have skipped the VSCode configuration script_
-Code → Preference → Settings (or CTRL + ,) and add or edit the following values:
-`"terminal.integrated.fontFamily": "Hack Nerd Font"`
-`"terminal.integrated.fontSize": 14`
+Code → Preference → Settings (or CTRL + ,) and add or edit the following values:  
+`"terminal.integrated.fontFamily": "Hack Nerd Font"`  
+`"terminal.integrated.fontSize": 14`  
 
 ## Resources:
 
