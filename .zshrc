@@ -130,7 +130,7 @@ autoload -Uz compinit
 alias npmlist="npm list -g --depth=0"
 
 # Update npm packages globally
-alias npmupdate="npm update -g"
+alias npmupdate="sudo npm update -g"
 
 # Undo the last commit
 alias uncommit="git reset HEAD~1"
