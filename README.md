@@ -18,6 +18,7 @@ _Check linked files to more details._
 - [dotfiles.sh](install/dotfiles.sh) - install and configure dotfiles.
 - [drivers.sh](install/drivers.sh) - install linux drivers.
 - [npm.sh](install/npm.sh) - install npm packages.
+- [preferences.sh](install/preferences.sh) - gnome preferences.
 - [setup.sh](install/setup.sh) - main installer.
 - [util.sh](install/util.sh) - support functions for other installers.
 - [vscode.sh](install/vscode.sh) - VSCode plugins installer.

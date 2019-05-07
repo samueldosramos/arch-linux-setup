@@ -34,6 +34,14 @@ else
     e_warning "Skipped applications install."
 fi
 
+# Install Gnome preferences
+seek_confirmation "Warning: This step install Gnome preferences"
+if is_confirmed; then
+    bash ./install/preferences.sh
+else
+    e_warning "Skipped preferences update."
+fi
+
 # Install Zsh
 seek_confirmation "Warning: This step install Zsh, Hack Nerd Font and some plugins."
 if is_confirmed; then
