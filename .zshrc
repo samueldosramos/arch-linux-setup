@@ -17,8 +17,7 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 # nvm path
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+source /usr/share/nvm/init-nvm.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
