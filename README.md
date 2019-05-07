@@ -107,32 +107,6 @@ Code → Preference → Settings (or CTRL + ,) and add or edit the following val
 `"terminal.integrated.fontFamily": "Hack Nerd Font"`
 `"terminal.integrated.fontSize": 14`
 
-#### Activating Numlock on Bootup
-
-Install numlockx and gnome-session-properties:
-
-```
-yay -Sy numlockx gnome-session-properties
-```
-
-Then, add a start-up command to launch `numlockx`:
-
-```
-gnome-session-properties
-```
-
-The above command opens the Startup Applications Preferences applet. Click Add and enter the following:
-
-```
-Name: Numlockx
-Command: /usr/bin/numlockx on
-Comment: Turns on numlock.
-```
-
-- Note: This is not a system-wide change, repeat these steps for each user wishing to activate NumLock after logging in.
-
----
-
 ## Resources:
 
 - [Arch Linux](https://www.archlinux.org/)
@@ -145,3 +119,4 @@ Comment: Turns on numlock.
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Powerlevel10k theme for Zsh](https://github.com/romkatv/powerlevel10k)
 - [Nerd Fonts](https://nerdfonts.com/)
+- [Emoji support on Linux](https://pjs-web.de/post/emoji-support-for-notion-so-on-linux/)
