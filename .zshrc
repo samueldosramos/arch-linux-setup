@@ -1,15 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# --------------------------- Custom paths ------------------------------------
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
-# ========== Custom paths ==========
 # Support 256 colors path
 export TERM="xterm-256color"
-
-# Powerlevel10k theme
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Tilix (advanced GTK3 tiling terminal emulator)
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
@@ -19,10 +16,13 @@ fi
 # nvm path
 source /usr/share/nvm/init-nvm.sh
 
+# ------------------------------ Theme ----------------------------------------
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Powerlevel10k theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_MODE="awesome-fontconfig"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir vcs)
@@ -36,6 +36,7 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 # If set to an empty array, this variable will have no effect.
 ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "robbyrussell" )
 
+# ----------------------------- Options ---------------------------------------
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -77,6 +78,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "robbyrussell" )
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# ----------------------------- Plugins ---------------------------------------
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -92,14 +94,13 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# ========== External plugins (via Brew) ==========
+# --------------------- External plugins (via apt) ----------------------------
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 
-# User configuration
-
+# ------------------------- User configuration --------------------------------
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -124,8 +125,7 @@ autoload -Uz compinit
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# ========== Custom aliases ==========
-
+# --------------------------- Custom aliases ----------------------------------
 # List npm packages installed globally
 alias npmlist="npm list -g --depth=0"
 
@@ -134,3 +134,12 @@ alias npmupdate="sudo npm update -g"
 
 # Undo the last commit
 alias uncommit="git reset HEAD~1"
+
+# Copy ssh
+alias copyssh="pbcopy < ~/.ssh/id_rsa.pub | echo '=> Public key copied to pasteboard.'"
+
+# Open .zshrc in VSCode
+alias zshconfig="code ~/.zshrc"
+
+# Source .zshrc
+alias zshup="source ~/.zshrc"

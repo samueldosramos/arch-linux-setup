@@ -21,22 +21,17 @@ _Check linked files to more details._
 - [preferences.sh](install/preferences.sh) - gnome preferences.
 - [setup.sh](install/setup.sh) - main installer.
 - [util.sh](install/util.sh) - support functions for other installers.
-- [vscode.sh](install/vscode.sh) - VSCode plugins installer.
 - [yay.sh](install/yay.sh) - install Yay.
-- [zsh.sh](install/zsh.sh) - Zsh installer.
+
+**Note:** _These files will be discarded later._
 
 ### Settings Files:
 
-- [bash_profile](.bash_profile) - some fallback configs to Terminal.app.
 - [gitconfig](.gitconfig) - basic git settings.
 - [gitignore_global](.gitignore_global) - global gitignore.
 - [zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
 
-### Others files:
-
-- [settings.json](vscode/settings.json) - VSCode customization.
-
----
+**Note:** _These files are permanent._
 
 ## Installation:
 
@@ -103,9 +98,9 @@ Terminal → Preferences → Profiles → Text → Change Font. I use Hack Nerd 
 #### Visual Studio Code config:
 
 **Note:** _Step needed only if you have skipped the VSCode configuration script_
-Code → Preference → Settings (or CTRL + ,) and add or edit the following values:  
-`"terminal.integrated.fontFamily": "Hack Nerd Font"`  
-`"terminal.integrated.fontSize": 14`  
+Code → Preference → Settings (or CTRL + ,) and add or edit the following values:
+`"terminal.integrated.fontFamily": "Hack Nerd Font"`
+`"terminal.integrated.fontSize": 14`
 
 ## Resources:
 

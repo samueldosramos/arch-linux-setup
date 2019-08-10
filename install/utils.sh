@@ -2,6 +2,9 @@
 #
 # Some functions used in install scripts
 
+# Global variables
+DOTFILES_DIRECTORY="$PWD"
+
 # Header logging
 e_header() {
   printf "\n$(tput setaf 3)%s$(tput sgr0)\n" "$@"
@@ -42,33 +45,18 @@ is_confirmed() {
   return 1
 }
 
+# Print a question
+ask() {
+  e_header "$1"
+  read -r
+}
+
 # Keep-alive: update existing `sudo` time stamp until process has finished
 keep_sudo_alive() {
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 }
 
-# Check if a application is installed
-app_is_installed() {
-  e_header "Verifying that $1 is installed..."
-
-  # Set to 1 initially
-  local return_=1
-
-  # Set to 0 if not found
-  type $1 >/dev/null 2>&1 || { local return_=0; }
-
-  # Return value
-  if [ $return_ = 0 ]; then
-    e_warning "Installing $1..."
-    yay -Sy $1
-  else
-    e_success "$1 is installed"
-  fi
-}
-
 # Force move/replace files
-DOTFILES_DIRECTORY="$PWD"
-
 replace() {
   mv -f "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
 }

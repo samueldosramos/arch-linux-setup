@@ -43,7 +43,6 @@ yay -Sy spotify
 yay -Sy lollyṕop
 
 # Productivity
-yay -Sy mailspring
 yay -Sy wps-office ttf-wps-fonts wps-office-mui-pt-br wps-office-extension-portuguese-brazilian-dictionary
 
 # Social
