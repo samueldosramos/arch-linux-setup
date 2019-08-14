@@ -183,10 +183,10 @@ ln -s /usr/share/zoneinfo/America/Bahia /etc/localtime
 vi /etc/locale.gen
 ```
 
-Uncomment the language you are going to use (pt_BR.UTF-8 UTF-8)
+Uncomment the language you are going to use (en_US.UTF-8 UTF-8)
 
 ```
-/pt_BR
+/en_US
 ```
 
 Press `x` to uncomment.
@@ -201,9 +201,9 @@ Then:
 ```
 locale-gen
 
-echo LANG=pt_BR.UTF-8 > /etc/locale.conf
+echo LANG=en_US.UTF-8 > /etc/locale.conf
 
-export LANG=pt_BR.UTF-8
+export LANG=en_US.UTF-8
 ```
 
 ### Initramfs
