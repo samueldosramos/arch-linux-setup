@@ -42,9 +42,6 @@ yay -Sy qbittorrent
 yay -Sy spotify
 yay -Sy lollypop
 
-# Productivity
-yay -Sy wps-office ttf-wps-fonts wps-office-mui-pt-br wps-office-extension-portuguese-brazilian-dictionary
-
 # Social
 yay -Sy slack-desktop
 yay -Sy telegram-desktop
