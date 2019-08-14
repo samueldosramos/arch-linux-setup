@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# mascOS setup script
+# Arch with Gnome setup script
 # Font: https://github.com/samuelramox/gnome-setup
 # Main install script
 
