@@ -21,6 +21,7 @@ yay -Sy ttf-dejavu ttf-freefont ttf-liberation ttf-ms-fonts ttf-ubuntu-font-fami
 
 # Browser
 yay -Sy install google-chrome chrome-gnome-shell
+yay -Sy firefox-developer-edition
 #yay -Sy firefox firefox-i18n-pt-br
 
 # Cloud
