@@ -126,12 +126,6 @@ autoload -Uz compinit
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # --------------------------- Custom aliases ----------------------------------
-# List npm packages installed globally
-alias npmlist="npm list -g --depth=0"
-
-# Update npm packages globally
-alias npmupdate="sudo npm update -g"
-
 # Undo the last commit
 alias uncommit="git reset HEAD~1"
 
