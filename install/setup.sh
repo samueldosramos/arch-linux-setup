@@ -37,7 +37,7 @@ else
 fi
 
 # Install npm packages
-seek_confirmation "Warning: This step install npm packages"
+seek_confirmation "Warning: This step install npm packages."
 if is_confirmed; then
   bash ./install/npm.sh
 else
@@ -45,7 +45,7 @@ else
 fi
 
 # Install Gnome preferences
-seek_confirmation "Warning: This step install Gnome preferences"
+seek_confirmation "Warning: This step install Gnome preferences."
 if is_confirmed; then
   bash ./install/preferences.sh
 else
@@ -61,11 +61,11 @@ else
 fi
 
 # Create a directory for projects and development
-e_header "Creating Developer directory in Home"
+e_header "Creating Developer directory in Home."
 mkdir ${HOME}/Developer
 
 # Cleanup cached downloads and remove the installation zip and folder
-e_header "Removing unnecessary files"
+e_header "Removing unnecessary files."
 sudo pacman -Scc
 sudo pacman -Qdtq | sudo pacman -Rs -
 sudo rm -Rv /tmp/
