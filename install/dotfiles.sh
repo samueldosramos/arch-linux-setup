@@ -4,7 +4,6 @@
 # Install dotfiles and configure git
 
 source ./install/utils.sh
-keep_sudo_alive
 
 # Install Zsh:
 yay -Sy install zsh

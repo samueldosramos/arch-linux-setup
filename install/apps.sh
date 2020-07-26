@@ -4,7 +4,6 @@
 # Comment (with #) what should not be installed and add the applications you want to install.
 
 source ./install/utils.sh
-keep_sudo_alive
 
 # Gnome apps
 yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-calculator gnome-calendar gnome-control-center gnome-disk-utility gnome-photos gnome-screenshot gnome-shell-extensions gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage seahorse

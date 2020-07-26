@@ -3,7 +3,6 @@
 # Install Yay
 
 source ./install/utils.sh
-keep_sudo_alive
 
 # Install required packages before installation
 sudo pacman -S git

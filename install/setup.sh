@@ -5,7 +5,6 @@
 # Main install script
 
 source ./install/utils.sh
-keep_sudo_alive
 
 # Install Yay
 e_header "Installing Yay..."

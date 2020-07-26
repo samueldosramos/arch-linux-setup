@@ -4,7 +4,6 @@
 # Add or exclude packages before installation
 
 source ./install/utils.sh
-keep_sudo_alive
 
 var="nodejs"
 e_header "Verifying that $var is installed..."
