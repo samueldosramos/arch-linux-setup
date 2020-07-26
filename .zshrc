@@ -87,8 +87,10 @@ ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "robbyrussell" )
 plugins=(
   colored-man-pages
   extract
+  fast-syntax-highlighting
   git
-  github
+  npm
+  sudo
   z
 )
 
@@ -96,7 +98,6 @@ source $ZSH/oh-my-zsh.sh
 
 # --------------------- External plugins (via apt) ----------------------------
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 
