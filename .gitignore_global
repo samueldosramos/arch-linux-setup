@@ -1,4 +1,21 @@
-# Created by https://www.gitignore.io/api/linux,macos,windows
+
+# Created by https://www.toptal.com/developers/gitignore/api/linux,archlinuxpackages
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,archlinuxpackages
+
+### ArchLinuxPackages ###
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/
 
 ### Linux ###
 *~
@@ -15,50 +32,4 @@
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-### macOS ###
-*.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-
-# End of https://www.gitignore.io/api/linux,macos,windows
+# End of https://www.toptal.com/developers/gitignore/api/linux,archlinuxpackages
