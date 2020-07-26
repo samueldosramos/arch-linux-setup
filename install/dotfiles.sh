@@ -19,7 +19,7 @@ git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/c
 
 # Install iconic font for Zsh
 # See more: https://nerdfonts.com/
-yay -Sy nerd-fonts-complete
+yay -Sy nerd-fonts-jetbrains-mono
 
 # Install Powerlevel10k theme
 yay -Sy zsh-theme-powerlevel10k
