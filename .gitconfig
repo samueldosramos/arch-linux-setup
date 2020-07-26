@@ -6,8 +6,6 @@
 	email = <Your e-mail here>
 [github]
 	user = <Your username here>
-[credential]
-	helper = osxkeychain
 [core]
 	editor = nano
 	excludesfile = ~/.gitignore_global
