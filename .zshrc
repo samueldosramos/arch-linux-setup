@@ -135,6 +135,3 @@ alias copyssh="pbcopy < ~/.ssh/id_rsa.pub | echo '=> Public key copied to pasteb
 
 # Open .zshrc in VSCode
 alias zshconfig="code ~/.zshrc"
-
-# Source .zshrc
-alias zshup="source ~/.zshrc"
