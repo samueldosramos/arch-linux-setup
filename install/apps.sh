@@ -17,7 +17,7 @@ yay -Sy suru-plus-pack-git
 yay -Sy yaru-icon-theme yaru-gtk-theme yaru-gnome-shell-theme
 
 # Fonts
-yay -Sy ttf-dejavu ttf-freefont ttf-liberation ttf-ms-fonts ttf-ubuntu-font-family ttf-fira-code
+yay -Sy ttf-dejavu ttf-freefont ttf-liberation ttf-ms-fonts ttf-ubuntu-font-family ttf-jetbrains-mono
 
 # Browser
 yay -Sy install google-chrome chrome-gnome-shell
