@@ -36,20 +36,20 @@ else
   e_warning "Skipped dotfiles settings."
 fi
 
-# Install Gnome preferences
-seek_confirmation "Warning: This step install Gnome preferences"
-if is_confirmed; then
-  bash ./install/preferences.sh
-else
-  e_warning "Skipped preferences update."
-fi
-
 # Install npm packages
 seek_confirmation "Warning: This step install npm packages"
 if is_confirmed; then
   bash ./install/npm.sh
 else
   e_warning "Skipped npm settings update."
+fi
+
+# Install Gnome preferences
+seek_confirmation "Warning: This step install Gnome preferences"
+if is_confirmed; then
+  bash ./install/preferences.sh
+else
+  e_warning "Skipped preferences update."
 fi
 
 # Generate SSH
