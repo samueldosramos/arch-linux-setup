@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Install Yay
+# See https://github.com/Jguer/yay
 
 source ./install/utils.sh
 
