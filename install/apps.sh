@@ -6,50 +6,86 @@
 source ./install/utils.sh
 
 # Gnome apps
-yay -Sy eog evince file-roller gedit gedit-plugins gnome-backgrounds gnome-calculator gnome-calendar gnome-control-center gnome-disk-utility gnome-photos gnome-screenshot gnome-shell-extensions gnome-video-effects gvfs sushi totem gnome-tweaks gnome-usage seahorse
+yay -Sy eog
+yay -Sy evince
+yay -Sy file-roller
+yay -Sy gedit
+yay -Sy gedit-plugins
+yay -Sy gnome-backgrounds
+yay -Sy gnome-calculator
+yay -Sy gnome-calendar
+yay -Sy gnome-control-center
+yay -Sy gnome-disk-utility
+yay -Sy gnome-photos
+yay -Sy gnome-screenshot
+yay -Sy gnome-shell-extensions
+yay -Sy gnome-video-effects
+yay -Sy gvfs
+yay -Sy sushi
+yay -Sy totem
+yay -Sy gnome-tweaks
+yay -Sy gnome-usage
+yay -Sy seahorse
 
 # Themes
 yay -Sy adapta-gtk-theme
-yay -Sy paper-icon-theme-git
 yay -Sy breeze-adapta-cursor-theme-git
-yay -Sy xcursor-breeze
+yay -Sy paper-icon-theme-git
 yay -Sy suru-plus-pack-git
-yay -Sy yaru-icon-theme yaru-gtk-theme yaru-gnome-shell-theme
+yay -Sy xcursor-breeze
+yay -Sy yaru-gnome-shell-theme
+yay -Sy yaru-gtk-theme
+yay -Sy yaru-icon-theme
 
 # Fonts
-yay -Sy ttf-dejavu ttf-freefont ttf-liberation ttf-ms-fonts ttf-ubuntu-font-family ttf-jetbrains-mono
+yay -Sy ttf-dejavu
+yay -Sy ttf-freefont
+yay -Sy ttf-jetbrains-mono
+yay -Sy ttf-liberation
+yay -Sy ttf-ms-fonts
+yay -Sy ttf-ubuntu-font-family
 
 # Browser
-yay -Sy install google-chrome chrome-gnome-shell
+yay -Sy google-chrome
+yay -Sy chrome-gnome-shell
+#yay -Sy firefox
+#yay -Sy firefox-i18n-pt-br
 yay -Sy firefox-developer-edition
-#yay -Sy firefox firefox-i18n-pt-br
+#yay -Sy firefox-developer-edition-i18n-pt-br
 
 # Cloud
 yay -Sy install dropbox nautilus-dropbox
 
 # Developer
-yay -Sy nodejs npm
-yay -Sy nvm
 yay -Sy code
+yay -Sy nodejs
+yay -Sy npm
+yay -Sy nvm
 yay -Sy tilix
 yay -Sy zeal
+
+# SSH
 yay -Sy openssh
 sudo systemctl enable sshd
 sudo systemctl start sshd
 
 # Multimedia
+yay -Sy lollypop
 yay -Sy qbittorrent
 yay -Sy spotify
-yay -Sy lollypop
 
 # Social
 yay -Sy slack-desktop
 yay -Sy telegram-desktop
 
 # Utility
-yay -Sy unzip unrar p7zip zip
-yay -Sy wget curl
+yay -Sy curl
 yay -Sy ntfs-3g
+yay -Sy p7zip
+yay -Sy unrar
+yay -Sy unzip
+yay -Sy wget
+yay -Sy zip
 
 # Performance
 yay -Sy preload

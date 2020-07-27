@@ -12,7 +12,8 @@ yay -Sy install zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # Install some external plugins:
-yay -Sy zsh-autosuggestions zsh-completions
+yay -Sy zsh-autosuggestions
+yay -Sy zsh-completions
 yay -Sy zsh-fast-syntax-highlighting
 
 # Install iconic font for Zsh

@@ -13,7 +13,8 @@ sudo systemctl enable laptop-mode.service
 yay -Sy --noconfirm pulseaudio pulseaudio-alsa a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore x265 ffmpeg
 
 # Bluetooth drivers
-yay -Sy gnome-bluetooth pulseaudio-bluetooth
+yay -Sy gnome-bluetooth
+yay -Sy pulseaudio-bluetooth
 sudo modprobe btusb
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
