@@ -448,19 +448,21 @@ nmtui
 ping -c 3 www.google.com
 ```
 
-### Install Gnome
+### Install KDE Plasma
 
-Install light Gnome:
-
-```
-sudo pacman -S gnome-shell gnome-terminal gdm nautilus xdg-user-dirs-gtk
-```
-
-Enable and start gdm:
+Install light Plasma:
 
 ```
-sudo systemctl enable gdm
-sudo systemctl start gdm
+sudo pacman -Sy plasma-meta
+sudo pacman -Sy plasma-wayland-session
+pacman -Sy konsole
+```
+
+Enable and start sddm:
+
+```
+sudo systemctl enable sddm
+sudo systemctl start sddm
 
 ```
 
