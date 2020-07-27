@@ -21,7 +21,7 @@ fi
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# Powerlevel10k theme
+# See https://github.com/romkatv/powerlevel10k
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_MODE="awesome-fontconfig"
