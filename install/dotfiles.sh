@@ -13,9 +13,7 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # Install some external plugins:
 yay -Sy zsh-autosuggestions zsh-completions
-
-# Install plugin fast-syntax-highlighting
-git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
+yay -Sy zsh-fast-syntax-highlighting
 
 # Install iconic font for Zsh
 # See more: https://nerdfonts.com/
