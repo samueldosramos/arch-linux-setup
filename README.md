@@ -24,9 +24,9 @@ _Check linked files to more details._
 
 ### Settings Files
 
-- [gitconfig](.gitconfig) - basic git settings.
-- [gitignore_global](.gitignore_global) - global gitignore.
-- [zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
+- [.gitconfig](.gitconfig) - basic git settings.
+- [.gitignore_global](.gitignore_global) - global gitignore.
+- [.zshrc](.zshrc) - terminal configs with aliases, paths, plugins and theme.
 
 **Note:** _These files are permanent._
 
