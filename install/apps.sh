@@ -54,7 +54,8 @@ yay -Sy firefox-developer-edition
 #yay -Sy firefox-developer-edition-i18n-pt-br
 
 # Cloud
-yay -Sy install dropbox nautilus-dropbox
+yay -Sy install dropbox
+yay -Sy install nautilus-dropbox
 
 # Developer
 yay -Sy code
