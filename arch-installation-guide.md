@@ -189,6 +189,12 @@ Uncomment the language you are going to use (en_US.UTF-8 UTF-8)
 /en_US
 ```
 
+Or (pt_BR.UTF-8 UTF-8)
+
+```
+/pt_BR
+```
+
 Press `x` to uncomment.
 To exit, press `ESC` and type:
 
@@ -204,6 +210,16 @@ locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 
 export LANG=en_US.UTF-8
+```
+
+Or
+
+```
+locale-gen
+
+echo LANG=pt_BR.UTF-8 > /etc/locale.conf
+
+export LANG=pt_BR.UTF-8
 ```
 
 ### Initramfs
@@ -385,9 +401,10 @@ It should look like this:
 Install the necessary packages for the network to work:
 
 ```
-pacman -Sy wireless_tools wpa_supplicant dialog
-
-pacman -S networkmanager
+pacman -Sy wireless_tools
+pacman -Sy wpa_supplicant
+pacman -Sy dialog
+pacman -Sy networkmanager
 
 systemctl enable NetworkManager
 
