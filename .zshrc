@@ -92,6 +92,7 @@ plugins=(
   npm
   sudo
   z
+  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
