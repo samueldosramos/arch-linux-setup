@@ -3,18 +3,18 @@
 
 # --------------------------- Custom paths ------------------------------------
 # Path to your oh-my-zsh installation.
-export ZSH="${HOME}/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
+
+# nvm path
+source /usr/share/nvm/init-nvm.sh
 
 # Support 256 colors path
 export TERM="xterm-256color"
 
-# Tilix (advanced GTK3 tiling terminal emulator)
+# Tilix path
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
   source /etc/profile.d/vte.sh
 fi
-
-# nvm path
-source /usr/share/nvm/init-nvm.sh
 
 # ------------------------------ Theme ----------------------------------------
 # Set name of the theme to load --- if set to "random", it will
