@@ -65,7 +65,7 @@ sudo nano /etc/pacman.conf
 
 Uncomment the `Color` flag in the options. An example of how it will look:
 
-```json
+```
 #{{{ Misc options
     UseSyslog
     Color
