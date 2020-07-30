@@ -269,12 +269,14 @@ It should look like this:
 ```
 title          Arch Linux
 linux          /vmlinuz-linux
-initrd         /intel-ucode.img
+initrd         /cpu_manufacturer-ucode.img
 initrd         /initramfs-linux.img
 options        root=/dev/sda3 rw
 ```
 
-- Note: If your processor is not Intel, remove the initrd `intel-ucode.img`
+Replace `cpu_manufacturer-ucode.img` with `intel-ucode.img` or `amd-ucode`, depending on your processor.
+
+- Note: If your processor is not Intel or AMD, remove the initrd `cpu_manufacturer-ucode.img`
 
 Modify `/boot/loader/loader.conf` to select the input default suffix:
 
@@ -293,6 +295,11 @@ If your processor is Intel, also install the package below that enables you to l
 
 ```
 pacman -S intel-ucode
+```
+
+If your processor is AMD, also install the package below that enables you to load the manufacturer's microcode at boot time
+```
+pacman -S amd-ucode
 ```
 
 ### Install sudo
