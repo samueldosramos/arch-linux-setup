@@ -291,13 +291,13 @@ timeout 3
 default arch
 ```
 
-If your processor is Intel, also install the package below that enables you to load the manufacturer's microcode at boot time
+If your processor is **Intel**, also install the package below that enables you to load the manufacturer's microcode at boot time
 
 ```
 pacman -S intel-ucode
 ```
 
-If your processor is AMD, also install the package below that enables you to load the manufacturer's microcode at boot time
+If your processor is **AMD**, also install the package below that enables you to load the manufacturer's microcode at boot time
 ```
 pacman -S amd-ucode
 ```
