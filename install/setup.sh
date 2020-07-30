@@ -44,14 +44,6 @@ else
   e_warning "Skipped npm settings update."
 fi
 
-# Install Gnome preferences
-seek_confirmation "Warning: This step install Gnome preferences."
-if is_confirmed; then
-  bash ./install/preferences.sh
-else
-  e_warning "Skipped preferences update."
-fi
-
 # Generate SSH
 seek_confirmation "Warning: This step generate SSH."
 if is_confirmed; then

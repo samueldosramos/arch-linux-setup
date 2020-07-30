@@ -5,37 +5,25 @@
 
 source ./install/utils.sh
 
-# Gnome apps
-yay -Sy eog
-yay -Sy evince
-yay -Sy file-roller
-yay -Sy gedit
-yay -Sy gedit-plugins
-yay -Sy gnome-backgrounds
-yay -Sy gnome-calculator
-yay -Sy gnome-calendar
-yay -Sy gnome-control-center
-yay -Sy gnome-disk-utility
-yay -Sy gnome-photos
-yay -Sy gnome-screenshot
-yay -Sy gnome-shell-extensions
-yay -Sy gnome-video-effects
-yay -Sy gvfs
-yay -Sy sushi
-yay -Sy totem
-yay -Sy gnome-tweaks
-yay -Sy gnome-usage
-yay -Sy seahorse
-
-# Themes
-yay -Sy adapta-gtk-theme
-yay -Sy breeze-adapta-cursor-theme-git
-yay -Sy paper-icon-theme-git
-yay -Sy suru-plus-pack-git
-yay -Sy xcursor-breeze
-yay -Sy yaru-gnome-shell-theme
-yay -Sy yaru-gtk-theme
-yay -Sy yaru-icon-theme
+# KDE apps
+yay -Sy ark
+yay -Sy dolphin
+yay -Sy dolphin-plugins
+yay -Sy dosfstools
+yay -Sy filelight
+yay -Sy gwenview
+yay -Sy kaccounts-providers
+yay -Sy kcalc
+yay -Sy kcolorchooser
+yay -Sy kde-gtk-config
+yay -Sy kde-l10n-pt_br
+yay -Sy kwrite
+yay -Sy okular
+yay -Sy partitionmanager
+yay -Sy spectacle
+yay -Sy telepathy-kde-accounts-kcm
+yay -Sy xdg-desktop-portal
+yay -Sy xdg-desktop-portal-kde
 
 # Fonts
 yay -Sy ttf-dejavu
@@ -54,15 +42,14 @@ yay -Sy firefox-developer-edition
 #yay -Sy firefox-developer-edition-i18n-pt-br
 
 # Cloud
-yay -Sy install dropbox
-yay -Sy install nautilus-dropbox
+yay -Sy dropbox
+yay -Sy dropbox-kde-systray-icons
 
 # Developer
 yay -Sy code
 yay -Sy nodejs
 yay -Sy npm
 yay -Sy nvm
-yay -Sy tilix
 yay -Sy zeal
 
 # SSH
@@ -71,9 +58,17 @@ sudo systemctl enable sshd
 sudo systemctl start sshd
 
 # Multimedia
-yay -Sy lollypop
+yay -Sy dragon
+yay -Sy elisa
 yay -Sy qbittorrent
 yay -Sy spotify
+
+# Thumbnails
+yay -Sy ffmpegthumbs
+yay -Sy gstreamer
+yay -Sy gst-plugins
+yay -Sy kdegraphics-thumbnailers
+yay -Sy kdesdk-thumbnailer
 
 # Social
 yay -Sy slack-desktop
